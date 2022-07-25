@@ -7,7 +7,7 @@
     <title>prima pagina laravel</title>
 </head>
 <body>
-    {{-- <a href="{{ route("home")}}">Home</a> --}}
+    {{-- <a href="{{ route("home")}}">Home</a>  --}}
     <a href="{{ route("about_us")}}">About Us</a>
 
     <h1>Benvenuto {{ $user['name'] }} {{ $user['surname'] }}</h1>
