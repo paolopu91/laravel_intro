@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 })->name("home");
 
-Route::get('/', function (){
+Route::get('/about_us', function (){
 
     $utente = [
         'name' => 'Mario',
@@ -31,8 +31,12 @@ Route::get('/', function (){
     ];
 
 
-    return view("home",[
+    return view("about_us",[
         "user" => $utente,
         "products" => $prodotti,
     ]);
 })->name("about_us");
+
+Route::get("/products", function (){
+    return view("prodotti");
+});
