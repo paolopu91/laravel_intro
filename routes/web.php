@@ -38,5 +38,11 @@ Route::get('/about_us', function (){
 })->name("about_us");
 
 Route::get("/products", function (){
-    return view("prodotti");
+    $prodotti = config("pasta");
+
+    return view("prodotti", [
+        "prodotti"=>$prodotti
+    ]);
+
+    
 });
